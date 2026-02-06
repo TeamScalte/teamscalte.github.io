@@ -2,29 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Scalte Studios</title>
+  <title>Team Scalte</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --bg: #0e0e11;
+      --card: #1a1a22;
+      --text: #eaeaf0;
+      --muted: #a0a0b0;
+      --accent: #4da6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #0e0e11, #12121a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+
+    .asset {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .asset-title {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 12px;
+      font-size: 0.95rem;
+    }
+
+    .links span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #2a2a35;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; padding: 20px;">
 
-  <h1>Scalte Studios</h1>
-  <p>Independent game developer and Unity asset publisher.</p>
+<body>
+  <div class="container">
 
-  <h2>Published Assets</h2>
-  <ul>
-    <li>Momentum FPS Controller</li>
-    <li>Instant Worlds – Procedural Terrain Generator</li>
-  </ul>
+    <header>
+      <h1>Team Scalte</h1>
+      <p>
+        Independent game developer and Unity asset publisher focused on
+        high-quality, easy-to-use tools for rapid development.
+      </p>
+    </header>
 
-  <h2>About</h2>
-  <p>
-    I create high-quality, easy-to-use Unity tools focused on performance,
-    usability, and rapid development.
-  </p>
+    <section>
+      <h2>Published Assets</h2>
 
-  <h2>Contact</h2>
-  <p>Email: <strong>rajtiwariaditya80@gmail
-    .com</strong></p>
+      <div class="card">
+        <div class="asset">
+          <div class="asset-title">Momentum FPS Controller</div>
+          <div class="links">
+            <a href="https://www.teamscalte.itch.io" target="_blank">itch.io</a>
+            <span>Unity Asset Store — Coming Soon</span>
+          </div>
+        </div>
 
+        <div class="asset">
+          <div class="asset-title">Instant Worlds – Procedural Terrain Generator</div>
+          <p>High-quality procedural terrain generation with biome blending and automatic texturing.</p>
+          <div class="links">
+            <a href="https://www.teamscalte.itch.io" target="_blank">itch.io</a>
+            <span>Unity Asset Store — Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          Team Scalte creates production-ready Unity tools with a focus on
+          performance, clean workflows, and accessibility for developers of all skill levels.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <strong>rajtiwariaditya80@gmail.com</strong></p>
+      </div>
+    </section>
+
+    <footer>
+      © Team Scalte
+    </footer>
+
+  </div>
 </body>
 </html>
